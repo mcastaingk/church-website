@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conozca más sobre la Iglesia Restauración Profético Centro Integral Familiar.">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Quiénes Somos - Iglesia Restauración Profético</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <h1>Iglesia Restauración Profético</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="donaciones.html">Donaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>NO TEMAS, PORQUE YO ESTOY CONTIGO</h1>
+                <p>"No desmayes, porque yo soy tu Dios; que te esfuerzo; siempre te
+                    ayudaré, siempre te sustentaré con la diestra de mi justicia."</p>
+                <h2>ISAÍAS 41:10</h2>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>Quiénes Somos</h2>
+            <p>Fundada en el año 2018, bajo la dirección de Jehová Dios, la Iglesia Restauración Profético Centro
+                Integral Familiar ha tenido como objetivo principal propiciar un espacio de alabanza, oración y
+                adoración para toda persona que busca un cambio en su relación con Dios.
+                Conformada por una Pastora y Profeta conforme al corazón de Dios, que lidera a un pueblo que está en
+                crecimiento y cuya vida está fuertemente arraigada en nuestro lema: Isaías 41:10. Desde su
+                establecimiento, ha abierto sus puertas a todas las personas, para dar a conocer el poder de la
+                transformación mediante el Espíritu Santo.
+                Es un lugar donde las vidas son restauradas para impactar positivamente a otras personas y dar
+                testimonio de que la fe realmente la ocurren milagros, sanidades y la presencia de Dios está siempre
+                latente.</p>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team">
+            <h2>NUESTRO EQUIPO DE TRABAJO</h2>
+            <div class="team-grid">
+                <div class="team-member" onclick="openModal('romasia')">
+                    <img src="assets/romasia.jpg" alt="Romasia Gordon">
+                    <h3>Romasia Gordon</h3>
+                    <p>Pastora y Profetisa</p>
+                </div>
+                <div class="team-member" onclick="openModal('norma')">
+                    <img src="assets/norma.jpg" alt="Norma Gordon">
+                    <h3>Norma Gordon</h3>
+                    <p>Anciana</p>
+                </div>
+                <div class="team-member" onclick="openModal('dashiana')">
+                    <img src="assets/dashiana.jpg" alt="Dashiana Gordon">
+                    <h3>Dashiana Gordon</h3>
+                    <p>Pastora</p>
+                </div>
+                <div class="team-member" onclick="openModal('hugo')">
+                    <img src="assets/hugo.jpg" alt="Hugo Ortiz">
+                    <h3>Hugo Ortiz</h3>
+                    <p>Pastor y Evangelista</p>
+                </div>
+                <div class="team-member" onclick="openModal('yadira')">
+                    <img src="assets/yadira.jpg" alt="Yadira Quesada">
+                    <h3>Yadira Quesada</h3>
+                    <p>Pastora y Servidora</p>
+                </div>
+                <div class="team-member" onclick="openModal('tisha')">
+                    <img src="assets/tisha.jpg" alt="Tisha Williamson">
+                    <h3>Tisha Williamson</h3>
+                    <p>Pastora</p>
+                </div>
+                <div class="team-member" onclick="openModal('jessica')">
+                    <img src="assets/jessica.jpg" alt="Jessica Thorpe">
+                    <h3>Jessica Thorpe</h3>
+                    <p>Diaconisa y Evangelista</p>
+                </div>
+                <div class="team-member" onclick="openModal('karen')">
+                    <img src="assets/karen.png" alt="Karen Francis">
+                    <h3>Karen Francis</h3>
+                    <p>Diaconisa</p>
+                </div>
+                <div class="team-member" onclick="openModal('antwan')">
+                    <img src="assets/antwan.jpg" alt="Antwan Ortiz">
+                    <h3>Antwan Ortiz</h3>
+                    <p>Servidor</p>
+                </div>
+                <div class="team-member" onclick="openModal('aleyshka')">
+                    <img src="assets/aleyshka.jpg" alt="Aleyshka Ortiz">
+                    <h3>Aleyshka Ortiz</h3>
+                    <p>Servidora de Jóvenes</p>
+                </div>
+                <div class="team-member" onclick="openModal('ahydwan')">
+                    <img src="assets/ahydwan.jpg" alt="Ahydwan Ortiz Gordon">
+                    <h3>Ahydwan Ortiz Gordon</h3>
+                    <p>Servidor</p>
+                </div>
+                <div class="team-member" onclick="openModal('kengell')">
+                    <img src="assets/kengell.jpg" alt="Kengell Thomas">
+                    <h3>Kengell Thomas</h3>
+                    <p>Servidor</p>
+                </div>
+                <div class="team-member" onclick="openModal('jeyshell')">
+                    <img src="assets/jeyshell.png" alt="Jeyshell Gomez Gordon">
+                    <h3>Jeyshell Gomez Gordon</h3>
+                    <p>Servidor</p>
+                </div>
+                <div class="team-member" onclick="openModal('mishael')">
+                    <img src="assets/mishael.jpg" alt="Mishael White">
+                    <h3>Mishael White</h3>
+                    <p>Servidora de Misiones</p>
+                </div>
+                <div class="team-member" onclick="openModal('mayra')">
+                    <img src="assets/mayra.jpg" alt="Mayra Williamson">
+                    <h3>Mayra Williamson</h3>
+                    <p>Servidora de Damas</p>
+                </div>
+                <!-- Repeat for other members -->
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="modal-romasia" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('romasia')">&times;</span>
+                <img src="assets/romasia-large.jpg" alt="Romasia Gordon">
+                <h3>Romasia Gordon</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-norma" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('norma')">&times;</span>
+                <img src="assets/norma-large.jpg" alt="Norma Gordon">
+                <h3>Norma Gordon</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-dashiana" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('dashiana')">&times;</span>
+                <img src="assets/dashiana-large.jpg" alt="Dashiana Gordon">
+                <h3>Dashiana Gordon</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-hugo" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('hugo')">&times;</span>
+                <img src="assets/hugo-large.jpg" alt="Hugo Ortiz">
+                <h3>Hugo Ortiz</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-yadira" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('yadira')">&times;</span>
+                <img src="assets/yadira-large.jpg" alt="Yadira Quesada">
+                <h3>Yadira Quesada</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-tisha" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('tisha')">&times;</span>
+                <img src="assets/tisha-large.jpg" alt="Tisha Williamson">
+                <h3>Tisha Williamson</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-jessica" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('jessica')">&times;</span>
+                <img src="assets/jessica-large.jpg" alt="Jessica Thorpe">
+                <h3>Jessica Thorpe</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-karen" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('karen')">&times;</span>
+                <img src="assets/karen-large.jpg" alt="Karen Francis">
+                <h3>Karen Francis</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-antwan" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('antwan')">&times;</span>
+                <img src="assets/antwan-large.jpg" alt="Antwan Ortiz">
+                <h3>Antwan Ortiz</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-aleyshka" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('aleyshka')">&times;</span>
+                <img src="assets/aleyshka-large.jpg" alt="Aleyshka Ortiz">
+                <h3>Aleyshka Ortiz</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-ahydwan" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('ahydwan')">&times;</span>
+                <img src="assets/ahydwan-large.jpg" alt="Ahydwan Ortiz Gordon">
+                <h3>Ahydwan Ortiz Gordon</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-kengell" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('kengell')">&times;</span>
+                <img src="assets/kengell-large.jpg" alt="Kengell Thomas">
+                <h3>Kengell Thomas</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-jeyshell" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('jeyshell')">&times;</span>
+                <img src="assets/jeyshell-large.jpg" alt="Jeyshell Gomez Gordon">
+                <h3>Jeyshell Gomez Gordon</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-mishael" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('mishael')">&times;</span>
+                <img src="assets/mishael-large.jpg" alt="Mishael White">
+                <h3>Mishael White</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+        <div id="modal-mayra" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('mayra')">&times;</span>
+                <img src="assets/mayra-large.jpg" alt="Mayra Williamson">
+                <h3>Mayra Williamson</h3>
+                <p>Descripción detallada del miembro...</p>
+            </div>
+        </div>
+
+        <!-- Mission & Vision Section -->
+        <section class="mission-vision">
+            <div class="mission">
+                <h2>Nuestra Misión</h2>
+                <p>Somos una iglesia escogida por el Espíritu Santo, para predicar el evangelio de Jesucristo, a todas
+                    las personas, y hablarles acerca del amor, el arrepentimiento, el perdón de pecados, y el bautismo
+                    del Espíritu Santo.</p>
+            </div>
+            <div class="vision">
+                <h2>Nuestra Visión</h2>
+                <p>Que todas las personas sean alcanzadas y llenas del Espíritu Santo, trayendo cambios y un avivamiento
+                    sobre cada uno de ellos, como en el día de pentecostés, con dones y talentos para ser usados y
+                    guiados bajo la autoridad, guía y dirección atreves de la revelación profético.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> (506) 6291-5096</p>
+                <p><i class="fas fa-envelope"></i> RomasiaGordon@gmail.com</p>
+            </div>
+            <div>
+                <h3>Horario de Servicios</h3>
+                <p>DO: Culto 10:30am</p>
+                <p>MA: Noches de Oración 7pm</p>
+                <p>MI: Culto de Damas 3er miércoles de cada mes</p>
+                <p>JU: Curso/Discipulado 7pm</p>
+                <p>SÁ: Culto General 6pm | Comedor Infantil y Culto de Jóvenes 2do y 3er sábado de cada mes</p>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
