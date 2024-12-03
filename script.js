@@ -1,10 +1,49 @@
 function openModal(id) {
-    document.getElementById(`modal-${id}`).style.display = "flex";
-}
-function closeModal(id) {
-    document.getElementById(`modal-${id}`).style.display = "none";
+    const modal = document.getElementById(`modal-${id}`);
+    modal.style.display = "flex";
+    modal.setAttribute("aria-hidden", "false");
+    document.getElementById(`modal-${id}`).focus();
 }
 
-document.querySelector('.back-to-top').addEventListener('click', () => {
+function closeModal(id) {
+    const modal = document.getElementById(`modal-${id}`);
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
+}
+
+// Smooth Scroll to Sections
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+
+// Back-to-Top Button
+const backToTop = document.createElement('button');
+backToTop.textContent = '↑';
+backToTop.classList.add('back-to-top');
+document.body.appendChild(backToTop);
+
+backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+
+document.querySelectorAll('.modal').forEach((modal) => {
+    modal.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+            e.preventDefault();
+            // Logic to cycle focus within modal
+        }
+    });
 });
