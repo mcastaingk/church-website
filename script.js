@@ -1,3 +1,23 @@
+// Toggle menu for small screens
+const toggleButton = document.querySelector('.navbar-toggler');
+const menu = document.querySelector('.navbar-menu');
+
+toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+// Team photo hover animation (optional)
+const teamPhoto = document.querySelector('.team-photo');
+
+teamPhoto.addEventListener('mouseenter', () => {
+    teamPhoto.style.transform = 'scale(1.05)';
+    teamPhoto.style.transition = 'transform 0.3s ease-in-out';
+});
+
+teamPhoto.addEventListener('mouseleave', () => {
+    teamPhoto.style.transform = 'scale(1)';
+});
+
 function openModal(id) {
     const modal = document.getElementById(`modal-${id}`);
     modal.style.display = "flex";
