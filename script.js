@@ -1,33 +1,36 @@
 const carousel = document.querySelector('.carousel');
-const items = carousel.querySelectorAll('.carousel-item');
+const items = carousel.querySelectorAll('.custom-carousel-item');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
-let currentIndex = 0; // The starting position
-const itemsToShow = 3; // Number of items visible at a time
+let currentIndex = 0; // Initial slide position
+const itemsToShow = 3; // Number of images visible at once
 const totalItems = items.length;
 
-function updateCarousel() {
-    const offset = -currentIndex * (100 / itemsToShow); // Calculate translation in percentage
-    carousel.style.transform = `translateX(${offset}%)`; // Apply translation
-}
-
-// Adjust the width of each item based on the number of visible items
-items.forEach((item) => {
-    item.style.flex = `0 0 ${100 / itemsToShow}%`; // Distribute items evenly
+// Adjust the width of the carousel and each item dynamically
+items.forEach(item => {
+    item.style.flex = `0 0 ${100 / itemsToShow}%`; // Width of each item
 });
 
+function updateCarousel() {
+    const offset = -currentIndex * (100 / itemsToShow); // Calculate offset percentage
+    carousel.style.transform = `translateX(${offset}%)`; // Apply the translation
+}
+
+// Previous button click handler
 prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - itemsToShow;
     updateCarousel();
 });
 
+// Next button click handler
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex < totalItems - itemsToShow) ? currentIndex + 1 : 0; // Loop back to start
+    currentIndex = (currentIndex < totalItems - itemsToShow) ? currentIndex + 1 : 0;
     updateCarousel();
 });
 
-window.addEventListener('resize', updateCarousel); // Recalculate on window resize
+// Update on window resize
+window.addEventListener('resize', updateCarousel);
 
 // Smooth Scroll to Sections
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
