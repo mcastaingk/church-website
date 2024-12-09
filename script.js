@@ -7,6 +7,19 @@ let currentIndex = 0; // Initial slide position
 const itemsToShow = 3; // Number of images visible at once
 const totalItems = items.length;
 
+document.addEventListener("DOMContentLoaded", () => {
+    const menuItems = document.querySelectorAll('.navbar-menu a');
+    const currentPath = window.location.pathname;
+
+    menuItems.forEach((item) => {
+        if (item.getAttribute('href') === currentPath.split('/').pop()) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+});
+
 // Adjust the width of the carousel and each item dynamically
 items.forEach(item => {
     item.style.flex = `0 0 ${100 / itemsToShow}%`; // Width of each item

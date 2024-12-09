@@ -25,7 +25,7 @@ p {
 
 /* Header Styles */
 .header {
-    background-color: #f6f5e9;
+    background-color: #E8E8D3;
     padding: 10px 20px;
 }
 
@@ -43,9 +43,9 @@ p {
 }
 
 .navbar-brand {
-    font-weight: bold;
+    font-weight: bolder;
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -62,10 +62,18 @@ p {
     color: #000;
     font-size: 1rem;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .navbar-menu li a:hover {
     text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.navbar-menu li a.active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    font-weight: bold;
 }
 
 .navbar-icons a {
@@ -108,7 +116,8 @@ p {
     position: relative;
 }
 
-.team-photo-wrapper {
+.section-separator-orange,
+.section-separator-blue {
     position: relative;
     width: 100%;
     display: flex;
@@ -116,13 +125,25 @@ p {
     align-items: center;
 }
 
-.team-photo-wrapper::after {
+.section-separator-orange::after {
     content: '';
     position: absolute;
     bottom: 0;
     width: 75%;
     height: 10px;
-    background-color: #e37029;
+    background-color: #D66020;
+    z-index: 1;
+    transform: translateY(50%);
+    border-radius: 10px;
+}
+
+.section-separator-blue::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    height: 10px;
+    background-color: #109EB4;
     z-index: 1;
     transform: translateY(50%);
     border-radius: 10px;
@@ -131,45 +152,46 @@ p {
 /* About Section */
 .about {
     padding: 5rem 1rem;
-    background-color: #f6f5e9;
+    background-color: #F2F2E6;
     text-align: center;
 }
 
 .section-content {
-    max-width: 955px;
+    max-width: 1274px;
     margin: 0 auto;
     color: #000;
 }
 
 .about-title,
 .about-subtitle {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: bold;
     color: #000;
     margin-bottom: 0.5rem;
 }
 
 .about-verse {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: 900;
     color: #000;
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .about-text {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     color: #000;
     margin-bottom: 1rem;
 }
 
 .highlight-orange {
-    color: #e37029;
+    color: #D66020;
     font-weight: bold;
 }
 
 .highlight-blue {
-    color: #109eb4;
+    color: #109EB4;
     font-weight: bold;
 }
 
@@ -179,11 +201,27 @@ p {
 }
 
 /* Team Grid Section */
-.team-description {
-    font-size: 1rem;
+.team-grid-section {
+    text-align: center;
+    background-image: url('assets/dongsh-AHaaWiSZJbY-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: #000;
+}
+
+.team-title {
+    font-size: 3rem;
+    font-weight: bold;
     color: #000;
     margin-bottom: 2rem;
-    max-width: 800px;
+}
+
+.team-description {
+    font-size: 1.4rem;
+    color: #000;
+    margin-bottom: 4rem;
+    max-width: 1274px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
@@ -191,7 +229,7 @@ p {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     padding: 1rem;
 }
@@ -204,14 +242,7 @@ p {
     border: 5px solid;
     transition: transform 0.3s ease-in-out;
     border-radius: 10px;
-}
-
-.team-member:nth-child(odd) {
     border-color: #59bebe;
-}
-
-.team-member:nth-child(even) {
-    border-color: #eea873;
 }
 
 .team-member:hover {
@@ -266,30 +297,36 @@ p {
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
-    padding: 2rem 1rem;
-    background-color: #f6f5e9;
+    padding: 8rem 1rem;
+    background-color: #F2F2E6;
     text-align: center;
 }
 
 .mission,
 .vision {
     flex: 1;
-    max-width: 45%;
+    max-width: 42%;
     padding: 1.5rem;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
 .section-title {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    color: #000;
 }
 
-.mission p,
+.mission p {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #000;
+}
+
 .vision p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     color: #000;
 }
@@ -329,7 +366,7 @@ p {
 /* Carousel Section */
 .carousel-section {
     padding: 2rem 0;
-    background-color: #f6f5e9;
+    background-color: #E8E8D3;
     text-align: center;
 }
 
@@ -391,8 +428,8 @@ p {
 
 /* Footer Styles */
 .custom-footer {
-    background-color: #f6f5e9;
-    color: #333;
+    background-color: #E8E8D3;
+    color: #000;
     padding: 2rem;
 }
 
@@ -479,37 +516,6 @@ p {
     .footer-right {
         text-align: center;
     }
-}
-
-footer {
-    background-color: #109eb4;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-footer .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-footer h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #e37029;
 }
 
 /* Back-to-Top Button */
