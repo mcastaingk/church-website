@@ -53,8 +53,8 @@
                 <button id="carousel-prev" class="carousel-arrow left-arrow">⬅</button>
                 <div class="testimonies-carousel-container">
                     <div class="testimonies-carousel">
-                        <img class="testimonies-carousel-item" src="assets/video-thumb1.jpg" data-video="video1.mp4"
-                            alt="Testimony 1">
+                        <img class="testimonies-carousel-item" src="assets/video-thumb1.jpg"
+                            data-video="https://www.youtube.com/embed/yVvUgPDb4Kc" alt="Testimony 1">
                         <img class="testimonies-carousel-item" src="assets/video-thumb2.jpg" data-video="video2.mp4"
                             alt="Testimony 2">
                         <img class="testimonies-carousel-item" src="assets/video-thumb3.jpg" data-video="video3.mp4"
@@ -68,9 +68,12 @@
             <div class="blurred-background"></div>
             <div class="video-player-container">
                 <video id="video-player" controls>
-                    <source src="assets/video1.mp4" type="video/mp4">
+                    <source src="assets/video2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <iframe id="youtube-video-player" width="560" height="315"
+                    src="https://www.youtube.com/embed/yVvUgPDb4Kc" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
             </div>
         </section>
     </main>
