@@ -3,8 +3,8 @@ const items = carousel.querySelectorAll('.custom-carousel-item');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
-let currentIndex = 0; // Initial slide position
-const itemsToShow = 3; // Number of images visible at once
+let currentIndex = 0;
+const itemsToShow = 3;
 const totalItems = items.length;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Adjust the width of the carousel and each item dynamically
 items.forEach(item => {
-    item.style.flex = `0 0 ${100 / itemsToShow}%`; // Width of each item
+    item.style.flex = `0 0 ${100 / itemsToShow}%`;
 });
 
 function updateCarousel() {
-    const offset = -currentIndex * (100 / itemsToShow); // Calculate offset percentage
-    carousel.style.transform = `translateX(${offset}%)`; // Apply the translation
+    const offset = -currentIndex * (100 / itemsToShow);
+    carousel.style.transform = `translateX(${offset}%)`;
 }
 
 // Previous button click handler
@@ -71,13 +71,4 @@ window.addEventListener('scroll', () => {
     } else {
         backToTop.style.display = 'none';
     }
-});
-
-document.querySelectorAll('.modal').forEach((modal) => {
-    modal.addEventListener('keydown', (e) => {
-        if (e.key === 'Tab') {
-            e.preventDefault();
-            // Logic to cycle focus within modal
-        }
-    });
 });
