@@ -88,9 +88,9 @@ p {
     transform: scale(1.1);
 }
 
-/* Section Separators */
-.section-separator-orange,
-.section-separator-blue {
+/* Section Dividers */
+.section-divider-orange,
+.section-divider-blue {
     position: relative;
     width: 100%;
     display: flex;
@@ -98,7 +98,7 @@ p {
     align-items: center;
 }
 
-.section-separator-orange::after {
+.section-divider-orange::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -110,7 +110,7 @@ p {
     border-radius: 10px;
 }
 
-.section-separator-blue::after {
+.section-divider-blue::after {
     content: '';
     position: absolute;
     bottom: 0;

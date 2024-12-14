@@ -1,6 +1,6 @@
 /* Impact Section */
 .impact-section {
-    background-color: #0099cc;
+    background-color: #109EB4;
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -55,16 +55,19 @@
     cursor: pointer;
     margin-right: 10px;
     border-radius: 10px;
-    border: 2px solid transparent;
+    border: 4px solid transparent;
+    opacity: 70%;
+    transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .testimonies-carousel-item:hover,
 .testimonies-carousel-item.selected {
-    border: 2px solid #e37029;
+    border: 4px solid #59BEBE;
+    opacity: 100%;
 }
 
 .carousel-arrow {
-    background-color: #59bebe;
+    background-color: #109EB4;
     border: none;
     color: white;
     font-size: 1.5rem;
@@ -96,7 +99,6 @@
     z-index: -1;
 }
 
-video,
 iframe {
     width: 80%;
     max-width: 700px;
@@ -124,12 +126,4 @@ iframe {
     height: auto;
     object-fit: cover;
     display: block;
-}
-
-.hero-divider {
-    width: 80%;
-    height: 4px;
-    background-color: #e37029;
-    margin: 20px auto;
-    border-radius: 2px;
 }
