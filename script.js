@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     menuItems.forEach((item) => {
         if (item.getAttribute('href') === currentPath.split('/').pop()) {
             item.classList.add('active');
+        } else if (currentPath.split('/').pop() === '' && item.getAttribute('href') === 'index.html') {
+            item.classList.add('active');
         } else {
             item.classList.remove('active');
         }
