@@ -253,3 +253,53 @@
     border-top: 5px solid #00A6A6;
     border-bottom: 5px solid #00A6A6;
 }
+
+/* Earth Section */
+.earth-heaven-section {
+    background-color: #f4a261;
+    padding: 50px 20px;
+    color: black;
+}
+
+.earth-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.earth-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.earth-image img {
+    border: 5px solid #00a6a6;
+    border-radius: 8px;
+    max-width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.earth-text {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.earth-text .bold-text {
+    font-weight: bold;
+}
+
+.earth-text .highlight {
+    color: #00a6a6;
+    font-weight: bold;
+}
+
+.author {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1rem;
+    color: #333;
+}
