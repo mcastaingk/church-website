@@ -19,3 +19,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.querySelector('.transferencia-image').addEventListener('click', () => {
+    alert('Gracias por apoyar con su donación de acciones.');
+});
