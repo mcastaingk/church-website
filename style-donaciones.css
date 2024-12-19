@@ -363,3 +363,46 @@
     color: #E36A27;
     font-weight: bold;
 }
+
+/* Gracias Generosidad Section */
+.gracias-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url('assets/gracias-generosidad.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.gracias-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-top: 5px solid #00A6A6;
+    border-bottom: 5px solid #00A6A6;
+}
+
+.gracias-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.gracias-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.contact-link {
+    color: #00A6A6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
