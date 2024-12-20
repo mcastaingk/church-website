@@ -6,61 +6,98 @@
     text-align: center;
     color: white;
     position: relative;
+    overflow: hidden;
+}
+
+.donation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.32);
+    z-index: 1;
+}
+
+.donation-content {
+    position: relative;
+    z-index: 2;
 }
 
 .donation-content h1 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 3.5rem;
+    font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-.donation-content span {
-    display: block;
-    margin-top: 10px;
-    font-style: italic;
-    font-size: 1.2rem;
-}
-
 .donate-button {
-    background-color: #00A6A6;
+    background-color: #109EB4;
     color: white;
-    border: none;
+    border: 4px solid #59BEBE;
     padding: 15px 30px;
     font-size: 1.2rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: 900;
 }
 
 .donate-button:hover {
     background-color: #007E7E;
 }
 
+.donate-button i {
+    margin-left: 7px;
+}
+
 /* Donation Thanks Section */
 .donation-thanks {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to bottom, #F4F4E5, #E36A27);
+    padding: 90px 20px;
+    background: #E5E5CE;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .thank-you-title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+}
+
+.donation-methods-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 240px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.donation-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
 }
 
 .donation-methods {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .method {
     display: flex;
     align-items: center;
+    gap: 10px;
     font-size: 1.2rem;
+    color: #000;
+    font-weight: 600;
 }
 
 .method .icon {
@@ -68,14 +105,20 @@
     margin-right: 10px;
 }
 
+.method p {
+    margin-bottom: 0;
+}
+
 .donation-link {
-    color: #00A6A6;
+    color: #109EB4;
+    font-weight: bold;
     text-decoration: underline;
+    text-underline-offset: 8px;
+    transition: color 0.3s ease;
 }
 
 .donation-link:hover {
     color: #007E7E;
-    text-decoration: none;
 }
 
 /* Comedor Infantil Section */
