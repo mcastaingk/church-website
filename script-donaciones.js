@@ -1,14 +1,14 @@
 document.querySelector('.donate-button').addEventListener('click', function () {
-    window.location.href = 'https://your-donation-page-url.com';
+    window.location.href = 'https://www.paypal.com/donate/?hosted_button_id=ZPVKKAUHAVPSL';
 });
 
 document.querySelector('.donation-link').addEventListener('click', function (e) {
     e.preventDefault();
-    window.location.href = 'https://example.com';
+    window.location.href = 'https://www.paypal.com/donate/?hosted_button_id=ZPVKKAUHAVPSL';
 });
 
 document.querySelector('.donate-now').addEventListener('click', function () {
-    window.location.href = 'https://your-donation-page-url.com';
+    window.location.href = 'https://www.paypal.com/donate/?hosted_button_id=ZPVKKAUHAVPSL';
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
