@@ -20,3 +20,28 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
+
+/* Highlighted Section */
+.highlighted-section {
+    background-color: #F4A261;
+    padding: 2rem;
+    text-align: center;
+}
+
+.highlighted-section .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #000;
+}
+
+.highlighted-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.highlighted-section p {
+    font-size: 1.2rem;
+}
