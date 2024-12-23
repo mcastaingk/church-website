@@ -2,7 +2,7 @@
 .video-section {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 45vh;
     overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
 /* Highlighted Section */
 .highlighted-section {
     background-color: #EEA873;
-    padding: 8rem 0;
+    padding: 4rem 0;
     text-align: center;
 }
 
@@ -52,6 +52,7 @@
     background: url('assets/pexels-neosiam-4498792.png') no-repeat center center;
     background-size: cover;
     color: #000;
+    padding: 4rem;
 }
 
 .outreach-carousel-overlay {
@@ -67,7 +68,7 @@
 .outreach-carousel-section h2 {
     font-size: 5.7rem;
     text-align: left;
-    padding: 4rem;
+    margin-bottom: 4rem;
     font-weight: 900;
 }
 
@@ -78,15 +79,15 @@
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     gap: 1rem;
+    overflow-x: hidden;
 }
 
 .outreach-carousel-item {
-    flex: 0 0 auto;
+    flex: 0 0 calc(100% / 3);
     width: 250px;
     flex-shrink: 0;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
 }
 
@@ -95,50 +96,60 @@
     height: auto;
     border-radius: 8px;
     margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .outreach-carousel-item h3 {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #109EB4;
+    font-weight: 900;
 }
 
 .outreach-carousel-item p {
-    font-size: 1rem;
-    margin: 0.5rem 0 1rem;
+    font-size: 1.4rem;
+    margin: 0.5rem 0 2rem;
 }
 
 .outreach-carousel-item .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #2A9D8F;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    background-color: #109EB4;
+    color: white;
+    border: 4px solid #59BEBE;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .outreach-carousel-item .btn:hover {
-    background-color: #21867A;
+    background-color: #007E7E;
 }
 
 .outreach-carousel-section .carousel-controls {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
 .outreach-carousel-section .control-btn {
-    position: relative;
-    background-color: #2A9D8F;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    background-color: #109EB4;
+    color: white;
+    border: 4px solid #59BEBE;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    font-weight: 900;
+    margin: 0 1rem;
 }
 
 .outreach-carousel-section .control-btn:hover {
-    background-color: #21867A;
+    background-color: #007E7E;
 }
