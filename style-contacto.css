@@ -1,0 +1,59 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4ecdc4;
+    padding: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    padding: 2rem;
+    flex: 1;
+}
+
+.contact-form {
+    margin-top: 1rem;
+}
+
+.contact-form .form-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-map {
+    flex: 1;
+    position: relative;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
